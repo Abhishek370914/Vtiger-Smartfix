@@ -18,7 +18,7 @@ export const useStore = create<AppState>()(
       vtigerUrl: '',
       vtigerUsername: '',
       vtigerAccessKey: '',
-      backendUrl: 'http://localhost:3001',
+      backendUrl: 'https://vtiger-smartfix.onrender.com',
       isConfigured: false,
       setVtigerConfig: (url: any, username: any, key: any) => 
         set({ vtigerUrl: url, vtigerUsername: username, vtigerAccessKey: key, isConfigured: !!(url && username && key) }),
