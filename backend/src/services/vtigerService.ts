@@ -58,7 +58,7 @@ export class VtigerService {
     };
     const params = new URLSearchParams();
     params.append('operation', 'create');
-    params.append('sessionName', this.sessionId);
+    params.append('sessionName', this.sessionId!);
     params.append('elementType', 'ModComments');
     params.append('element', JSON.stringify(element));
 
@@ -74,7 +74,7 @@ export class VtigerService {
     };
     const params = new URLSearchParams();
     params.append('operation', 'revise');
-    params.append('sessionName', this.sessionId);
+    params.append('sessionName', this.sessionId!);
     params.append('element', JSON.stringify(element));
 
     const response = await axios.post(`${this.url}/webservice.php`, params);

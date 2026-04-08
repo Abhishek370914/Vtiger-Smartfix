@@ -1,5 +1,5 @@
 import express from "express";
-import { handleAnalyzeTicket, handlePostComment, handleAssignTicket } from "../controllers/ticketController";
+import { handleAnalyzeTicket, handlePostComment, handleAssignTicket } from '../controllers/ticketController.js';
 
 const router = express.Router();
 

@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { analyzeTicket } from "../services/geminiService";
-import { VtigerService } from "../services/vtigerService";
+import { analyzeTicket } from '../services/geminiService.js';
+import { VtigerService } from '../services/vtigerService.js';
 
 export const handleAnalyzeTicket = async (req: Request, res: Response) => {
   try {

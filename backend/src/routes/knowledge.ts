@@ -1,5 +1,5 @@
 import express from "express";
-import { handleKnowledgeSearch } from "../controllers/knowledgeController";
+import { handleKnowledgeSearch } from '../controllers/knowledgeController.js';
 
 const router = express.Router();
 

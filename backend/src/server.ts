@@ -3,10 +3,10 @@ import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
 import dotenv from "dotenv";
-import ticketRoutes from "./routes/ticket";
-import healthRoutes from "./routes/health";
-import knowledgeRoutes from "./routes/knowledge";
-import settingsRoutes from "./routes/settings";
+import ticketRoutes from './routes/ticket.js';
+import healthRoutes from './routes/health.js';
+import knowledgeRoutes from './routes/knowledge.js';
+import settingsRoutes from './routes/settings.js';
 
 dotenv.config();
 

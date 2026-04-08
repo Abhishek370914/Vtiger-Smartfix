@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { VtigerService } from "../services/vtigerService";
+import { VtigerService } from '../services/vtigerService.js';
 
 export const handleTestConnection = async (req: Request, res: Response) => {
   try {

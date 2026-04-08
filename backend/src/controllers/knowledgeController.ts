@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { searchKnowledgeBase } from "../services/geminiService";
+import { searchKnowledgeBase } from '../services/geminiService.js';
 
 export const handleKnowledgeSearch = async (req: Request, res: Response) => {
   try {

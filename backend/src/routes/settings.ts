@@ -1,5 +1,5 @@
 import express from "express";
-import { handleTestConnection } from "../controllers/settingsController";
+import { handleTestConnection } from '../controllers/settingsController.js';
 
 const router = express.Router();
 
