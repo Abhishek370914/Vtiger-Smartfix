@@ -1,0 +1,11 @@
+{
+  "name": "vtiger-smartfix-monorepo",
+  "version": "1.0.0",
+  "description": "Smart AI companion for Vtiger CRM",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "extension:dev": "cd extension && npm run dev",
+    "extension:build": "cd extension && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../extension && npm install"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Vtiger SmartFix",
+  "version": "1.0.0",
+  "description": "Smart AI companion for Vtiger CRM. AI Ticket Assistant, Health Check, and Knowledge Base Search.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "sidePanel"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Vtiger SmartFix"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "assets/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.vtiger.com/*"],
+      "js": ["assets/content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://*.vtiger.com/*"
+  ]
+}
